@@ -28,7 +28,7 @@ if (isset($_REQUEST['id'])){
     $query = "INSERT into `users` (id,username, department, email, city) VALUES ('$id','$username','$email','$department','city')";
     $result = mysqli_query($con,$query);
         if($result){
-            header("Location: http://localhost/wordpress/datatable/");
+            header("Location: http://localhost/wordpress/datatable/"); //Change the URL according to your data table name.
             exit(); 
         }
     }else{
